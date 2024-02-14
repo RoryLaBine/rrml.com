@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+
+<!-- Start of website head -->
+<head>
+
+<!-- Add metadata -->
+<meta charset="UTF-8">
+<meta name="author" content="Rory LaBine">
+<meta name="description" content="This website is for me to learn HMTL, CSS, and Java.">
+
+<title>The home page for my website</title>
+
+<link rel="icon" href="icons8-home-64.png" type="image/x-icon">
+
+<style>
+	body {
+		background-color: #333;
+		color: whitesmoke;
+	}
+</style>
+
+<!-- Style for my home page buttons. MOVE THIS INTO main.css AND ADD A LINK!!! -->
+<style>
+    .homepage {
+        background-color: burlywood;
+        color: white;
+        transition: border-radius 1s, 
+            background-color 0.5s, border-color 0.7s, border-width 0.7s, width 0.7s, height 0.7s;
+        height: 60px;
+        width: 150px;
+        border-style:solid;
+        border-color: rgb(150,150,150);
+        border-radius: 30px;
+        font-size: 20px;
+        border-width: 2px;
+    }
+    .homepage:hover {
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: rgb(150,150,150);
+        border-color: burlywood;
+        opacity: 0.95;
+        height: 80px;
+	width: 200px;
+    }
+    .homepage:active {
+        background-color: burlywood;
+    }
+</style>
+
+</head>
+
+
+<!-- Start of website body -->
+<body><center>
+	<h1>Welcome to RRML.COM!</h1>
+	<p>This website is an experiment for me to learn web design and build my skills. If you have any improvements, please email me:</p>
+	<h3>rrmlabine@gmail.com</h3>
+	<button class="homepage"> Buy my merch! </button>
+</center></body>
+
+
+
+</html>
