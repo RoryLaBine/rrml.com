@@ -1,67 +1,54 @@
+<!-- Declare the DOCTYPE as HTML - not sure why I'm doing this yet -->
 <!DOCTYPE html>
-
+<!-- Add a language tag - similar to metadata -->
 <html lang="en-US">
 
 
-<!-- Start of website head -->
+
+<!-- Start of website head which includes metadata, a title, and links -->
 <head>
 
-<!-- Add metadata -->
+<!-- Add metadata for web browsers to find this in search results -->
 <meta charset="UTF-8">
 <meta name="author" content="Rory LaBine">
 <meta name="description" content="This website is for me to learn HMTL, CSS, and Java.">
 
-<title>The home page for my website</title>
+<title>My first web page</title>
 
 <link rel="icon" href="icons8-home-64.png" type="image/x-icon">
-
-<style>
-	body {
-		background-color: #333;
-		color: whitesmoke;
-	}
-</style>
-
-<!-- Style for my home page buttons. MOVE THIS INTO main.css AND ADD A LINK!!! -->
-<style>
-    .homepage {
-        background-color: burlywood;
-        color: white;
-        transition: border-radius 1s, 
-            background-color 0.5s, border-color 0.7s, border-width 0.7s, width 0.7s, height 0.7s;
-        height: 60px;
-        width: 150px;
-        border-style:solid;
-        border-color: rgb(150,150,150);
-        border-radius: 30px;
-        font-size: 20px;
-        border-width: 2px;
-    }
-    .homepage:hover {
-        border-radius: 10px;
-        cursor: pointer;
-        background-color: rgb(150,150,150);
-        border-color: burlywood;
-        opacity: 0.95;
-        height: 80px;
-	width: 200px;
-    }
-    .homepage:active {
-        background-color: burlywood;
-    }
-</style>
+<link rel="stylesheet" href="main.css">
 
 </head>
 
 
+
 <!-- Start of website body -->
 <body><center>
-	<h1>Welcome to RRML.COM!</h1>
-	<p>This website is an experiment for me to learn web design and build my skills. If you have any improvements, please email me:</p>
+
+	<!-- Add the title with the abbreviation to let people know what RRML stands for. -->
+	<!-- NOTE: Abbreviations do not appear in screen readers. Be careful! -->
+	<h1>Welcome to <abbr title="Rory Robert Michael LaBine">RRML</abbr>.COM!</h1>
+
+	<!-- Add horizontal rule-->
+	<hr>
+
+	<!-- Add emphasis element for web browsers to know more-->
+	<p><em>This website is an experiment for me to learn web design and build my skills.</em> If you have any improvements, please email me:</p>
 	<h3>rrmlabine@gmail.com</h3>
+	
+	<!-- Add a button here -->
 	<button class="homepage"> Buy my merch! </button>
+
+	<!-- Add elements and spacing to show that I own this website. -->
+	<br><br><hr><br>
+	&lt;&lt;&lt; &copy; Rory LaBine &gt;&gt;&gt; 
 </center></body>
 
+<!-- End -->
 
-
-</html>
+<!-- Extra notes:
+	- Making a strong element can bold and emphasize text. Not sure if this helps with website recognition.
+	- HTML elements are ways to insert certain text within HTML. Examples:
+		- &nbsp; = space
+		- &lt = "<"
+-->

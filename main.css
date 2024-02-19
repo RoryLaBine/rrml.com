@@ -1,0 +1,36 @@
+body {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+
+
+/* .homepage class selector */
+.homepage {
+    background-color: rgb(222, 184, 135);
+    color: white;
+    transition: border-radius 1s, background-color 0.5s, border-color 0.7s, border-width 0.7s, width 0.7s, height 0.7s;
+    height: 60px;
+    width: 150px;
+    border-style: solid;
+    border-color: rgb(150, 150, 150);
+    border-radius: 30px;
+    font-size: 20px;
+    border-width: 2px;
+}
+
+/* Hover effect for .homepage */
+.homepage:hover {
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(150, 150, 150);
+    border-color: rgb(222, 184, 135);
+    opacity: 0.95;
+    height: 80px;
+    width: 200px;
+}
+
+/* Active state for .homepage */
+.homepage:active {
+    background-color: rgb(222, 184, 135); 
+}
